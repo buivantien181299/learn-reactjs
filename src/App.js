@@ -1,26 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import ToDoFeatrue from './features/Todo';
+import AlbumFeatrue from './features/Song';
 
 function App() {
+
+  const nameHuman = 'Vàng Văn Lợi';
+  const bornYear = '06/05/1997';
+  const isMale = true;
+  const inforWife = {
+    nameWife: 'Bùi Văn Tiến',
+    ageWife: 23,
+    birthDay: '18/12/1999',
+  };
+
+  const colorList = ['red', 'blue', 'green'];
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Vợ {inforWife.nameWife} yêu chồng {nameHuman} rất nhiều.
         </p>
-        <p>
-          Vợ yêu chồng rất nhiều.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          Chồng mình sinh năm {bornYear}, còn mình sinh năm {inforWife.birthDay}. Chúng mình không hợp tuổi
+          nhau đúng không? Nhưng nó cũng không sao cả, dù có cãi nhau, giận nhau, nhưng chung mình vẫn rất yêu nhau,
+          luôn nghĩ và tin tưởng nhau. Có một điều rất đặc biệt là mình là con {isMale ? 'trai' : 'gái'} và chồng mình
+          tất nhiên cũng là con {isMale ? 'trai' : 'gái'}; có thú vị không các bạn.
+        </div>
+        {/* {colorList.map(value => (
+          value + " "
+        ))} */}
+        <div>
+          {/* <ToDoFeatrue /> */}
+        </div>
       </header>
+      <AlbumFeatrue />
     </div>
   );
 }
