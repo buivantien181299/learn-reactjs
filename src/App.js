@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import ToDoFeatrue from './features/Todo';
 import AlbumFeatrue from './features/Song';
+import ColorBox from './components/ColorBox';
+import Counter from './components/Counter';
 
 function App() {
 
@@ -18,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" />
 
         <p>
           Vợ {inforWife.nameWife} yêu chồng {nameHuman} rất nhiều.
@@ -28,15 +30,20 @@ function App() {
           nhau đúng không? Nhưng nó cũng không sao cả, dù có cãi nhau, giận nhau, nhưng chung mình vẫn rất yêu nhau,
           luôn nghĩ và tin tưởng nhau. Có một điều rất đặc biệt là mình là con {isMale ? 'trai' : 'gái'} và chồng mình
           tất nhiên cũng là con {isMale ? 'trai' : 'gái'}; có thú vị không các bạn.
-        </div>
+        </div> */}
         {/* {colorList.map(value => (
           value + " "
         ))} */}
         <div>
-          {/* <ToDoFeatrue /> */}
+          <ToDoFeatrue />
         </div>
       </header>
-      <AlbumFeatrue />
+      {/* <AlbumFeatrue /> */}
+      <div>
+        {/* <p>useState</p>
+        <ColorBox />
+        <Counter /> */}
+      </div>
     </div>
   );
 }
