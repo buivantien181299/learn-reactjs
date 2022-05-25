@@ -15,7 +15,6 @@ TodoList.defaultProps = {
 function TodoList({ toDoList, onToDoClick }) {
     const handleToDoClick = (todo, idex) => {
         if (!onToDoClick) return;
-
         onToDoClick(todo, idex);
     };
     return (
